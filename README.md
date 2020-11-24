@@ -1,6 +1,6 @@
-# RetroWave Radio
+# Portfolio App
 
-RetroWave radio web app
+Portfolio web app
 
 # Project Stack
 
