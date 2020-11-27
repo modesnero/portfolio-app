@@ -34,7 +34,7 @@ export default class EditPage extends Component {
 
     setPage('home')
     await loadNotes(this.apiService.updateNote, token, _id, updatedNote)
-    setAlert(true, 'Заметка была отредактирована', 'info')
+    setAlert(true, 'Работа была отредактирована', 'info')
   }
 
   render () {
@@ -55,8 +55,8 @@ export default class EditPage extends Component {
               <FormTextarea
                 field='text'
                 rows='5'
-                title='Текст заметки'
-                placeholder='Введите текст заметки'
+                title='Описание работы'
+                placeholder='Введите описание работы'
                 value={text}
                 onFieldChange={this.onFieldChange}
               />

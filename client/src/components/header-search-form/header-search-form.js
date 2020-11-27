@@ -23,14 +23,14 @@ export default class HeaderSearchForm extends Component {
       <Form inline onSubmit={this.submit}>
         <FormControl
           type='text'
-          placeholder='Поиск заметок'
+          placeholder='Поиск работ'
           className='mt-2 mb-2 mr-2'
           value={searchValue}
           onChange={this.searchFieldChange}
         />
 
         <Button variant='secondary' className='mt-2 mb-2' type='submit'>
-          Поиск
+          Найти
         </Button>
       </Form>
     )

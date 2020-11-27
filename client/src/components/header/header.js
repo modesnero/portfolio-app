@@ -25,7 +25,7 @@ export default class Header extends Component {
           collapseOnSelect={true}
           expanded={this.state.expanded}
         >
-          <Navbar.Brand>Мои Заметки</Navbar.Brand>
+          <Navbar.Brand>Портфолио студента</Navbar.Brand>
           <Navbar.Toggle
             onClick={this.expandedToggle}
             aria-controls='responsive-navbar-nav'

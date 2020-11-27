@@ -40,8 +40,8 @@ export default function NotesList (props) {
 
   const emptyListView = (
     <>
-      <h3 className='mb-3'>Каталог заметок пуст</h3>
-      <Button onClick={() => setPage('add')}>Добавить заметку</Button>
+      <h3 className='mb-3'>Каталог работ пуст</h3>
+      <Button onClick={() => setPage('add')}>Добавить работу</Button>
     </>
   )
 

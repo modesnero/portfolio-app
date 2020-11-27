@@ -35,7 +35,7 @@ export default class AddPage extends Component {
     try {
       setPage('home')
       await loadNotes(this.apiService.postNote, token, note)
-      setAlert(true, 'Заметка успешно добавлена', 'success')
+      setAlert(true, 'Работа успешно добавлена', 'success')
     } catch (err) {
       console.error(err)
     }
@@ -60,8 +60,8 @@ export default class AddPage extends Component {
               <FormTextarea
                 field='text'
                 rows='5'
-                title='Текст заметки'
-                placeholder='Введите текст заметки'
+                title='Описание работы'
+                placeholder='Введите описание работы'
                 value={text}
                 onFieldChange={this.onFieldChange}
               />
@@ -69,7 +69,7 @@ export default class AddPage extends Component {
               <ColorChoose colorChange={this.colorChange} active={color} />
 
               <Button type='submit' variant='primary' block>
-                Добавить заметку
+                Добавить работу
               </Button>
             </Form>
           </Col>

@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
 
     // Save note in DB
     await newNote.save()
-    res.status(201).json({ message: 'Заметка была успешно создана' })
+    res.status(201).json({ message: 'Работа была успешно создана' })
   } catch (error) {
     res.status(500).json({ message: 'Ошибка сервера' })
   }
@@ -73,7 +73,7 @@ router.delete('/:id', async (req, res) => {
 
     // Delete note
     await Note.findOneAndDelete({ email, _id: id })
-    res.json({ message: 'Заметка была успешно удалена' })
+    res.json({ message: 'Работа была успешно удалена' })
   } catch (error) {
     res.status(500).json({ message: 'Ошибка сервера' })
   }
@@ -94,7 +94,7 @@ router.put('/:id', async (req, res) => {
 
     // Update note
     await Note.updateOne({ email, _id: id }, { note })
-    res.json({ message: 'Заметка была успешно обновлена' })
+    res.json({ message: 'Работа была успешно обновлена' })
   } catch (error) {
     res.status(500).json({ message: 'Ошибка сервера' })
   }

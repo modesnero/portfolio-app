@@ -72,7 +72,7 @@ export default class NotesPage extends Component {
         this.props.token,
         deleteId
       )
-      this.setAlert(true, 'Заметка была удалена', 'danger')
+      this.setAlert(true, 'Работа была удалена', 'danger')
     } catch (err) {
       console.error(err)
     }
